@@ -9,13 +9,24 @@
     <div class="container">
         <div class="deck" id="deckA" onclick="drawCard('A')">
             <h2>A</h2>
-            <p>Tap</p>
-            <div class="result" id="resA"></div>
+            <div class="card-scene">
+                <div class="card-inner" id="cardA">
+                    <div class="card-front">?</div>
+                    <div class="card-back" id="resA"></div>
+                </div>
+            </div>
+            <button onclick="event.stopPropagation(); resetDeck('A')">Reset</button>
         </div>
+
         <div class="deck" id="deckB" onclick="drawCard('B')">
             <h2>B</h2>
-            <p>Tap</p>
-            <div class="result" id="resB"></div>
+            <div class="card-scene">
+                <div class="card-inner" id="cardB">
+                    <div class="card-front">?</div>
+                    <div class="card-back" id="resB"></div>
+                </div>
+            </div>
+            <button onclick="event.stopPropagation(); resetDeck('B')">Reset</button>
         </div>
     </div>
     <script src="script.js"></script>
